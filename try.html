@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover Show Extra Text</title>
+  <style>
+    .box {
+      width: 250px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .extra-text {
+      display: none; /* hidden by default */
+      color: #0077cc;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .box:hover .extra-text {
+      display: block; /* show when hovered */
+    }
+
+    .box:hover {
+      background-color: #e0f4ff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p>This is my main text.</p>
+    <p class="extra-text">This text appears when you hover 👀</p>
+  </div>
+
+</body>
+</html>
